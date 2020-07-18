@@ -5,8 +5,8 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var vNumeroUno;
-	var vNumeroDos;
+	let vNumeroUno;
+	let vNumeroDos;
 	vNumeroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
 	vNumeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
 	alert("La suma es " + (vNumeroUno + vNumeroDos));	
@@ -14,8 +14,8 @@ function sumar()
 
 function restar()
 {
-	var vNumeroUno;
-	var vNumeroDos;
+	let vNumeroUno;
+	let vNumeroDos;
 	vNumeroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
 	vNumeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
 	alert("La resta es " + (vNumeroUno - vNumeroDos));	
@@ -24,8 +24,8 @@ function restar()
 
 function multiplicar()
 { 
-	var vNumeroUno;
-	var vNumeroDos;
+	let vNumeroUno;
+	let vNumeroDos;
 	vNumeroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
 	vNumeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
 	alert("El producto es " + (vNumeroUno * vNumeroDos));	
@@ -34,11 +34,11 @@ function multiplicar()
 
 function dividir()
 {
-	var vNumeroUno;
-	var vNumeroDos;
-	vNumeroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
-	vNumeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
-	alert("La división es " + (vNumeroUno / vNumeroDos));	
+	let vNumeroUno;
+	let vNumeroDos;
+	vNumeroUno = parseFloat(document.getElementById("txtIdNumeroUno").value);
+	vNumeroDos = parseFloat(document.getElementById("txtIdNumeroDos").value);
+	alert("La división es " + (vNumeroUno / vNumeroDos).toFixed(2));	
 	
 }
 
