@@ -3,14 +3,14 @@ function mostrar()
 	//Genero el número RANDOM entre 1 y 10 
 
 	var vNotaRan;
-	vNotaRan = Math.floor(Math.random() * 11) + 1;
+	vNotaRan = Math.round(Math.random() * (10-1) + 1);
 	
 	if( vNotaRan >=9 ){
-		alert("EXCELENTE");
+		alert(vNotaRan + " EXCELENTE");
 	} else if( vNotaRan >= 4 ){
-		alert("APROBÓ");		
+		alert(vNotaRan + " APROBÓ");		
 	} else{
-		alert("Vamos, la proxima se puede");			
+		alert(vNotaRan + " Vamos, la proxima se puede");			
 	}
 
 }//FIN DE LA FUNCIÓN

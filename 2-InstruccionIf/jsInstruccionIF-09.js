@@ -2,7 +2,7 @@ function mostrar()
 {
 
 	var vRan;
-	vRan = Math.floor(Math.random() * 11);
+	vRan = Math.round(Math.random() * (10-1) + 1);
 	alert(vRan);
  
 }//FIN DE LA FUNCIÓN

@@ -10,5 +10,88 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+    //------Declaro las variables y constantes
+    
+    let vNumLamp;
+    let vMarcLamp;
+    let vPrecioFinal;
+    const cPrecioLamp = 35;
+    //------Asigno valor a las varialbes
+    vNumLamp = parseInt(document.getElementById("txtIdCantidad").value);
+    vMarcLamp =  document.getElementById("Marca").value;    
+
+	switch(vNumLamp){
+
+        case 1:
+        case 2:
+
+            vPrecioFinal =  vNumLamp * cPrecioLamp;
+
+        break;
+		case 3:
+
+            if( vMarcLamp == "ArgentinaLuz" ){
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 15/100) ;
+
+            }
+            else if(vMarcLamp == "FelipeLamparas"){
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 10/100) ;
+
+            }
+            else{
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 5/100) ;
+
+            }
+
+        break;
+		case 4:
+
+            if( vMarcLamp = "ArgentinaLuz" || vMarcLamp == "FelipeLamparas" ){
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 25/100) ;
+
+            }
+            else{
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 20/100) ;
+
+            }
+
+        break;
+		case 5:
+
+            if( vMarcLamp = "ArgentinaLuz"){
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 40/100) ;
+
+            }
+            else{
+
+                vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 30/100) ;
+
+            }
+            
+        break;
+		default:
+
+            vPrecioFinal =  vNumLamp * cPrecioLamp * ( 1 - 50/100) ;
+  
+        break;
+        
+    }
+    
+    if( (vNumLamp * cPrecioLamp -  vPrecioFinal) > 120 ){
+
+        alert("Usted pago " +  (vPrecioFinal * 10/100) + " de IIBB.”, siendo " +  (vPrecioFinal * 10/100)  + " el impuesto que se pagó");
+
+        vPrecioFinal = vPrecioFinal * ( 1 + 10/100 );
+
+    }
+
+    document.getElementById("txtIdprecioDescuento").value = vPrecioFinal;
+
+
 }
