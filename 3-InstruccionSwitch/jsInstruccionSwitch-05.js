@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//tomo la hora
-	var vHoraDelDia = parseint(document.getElementById("txtIdHora").value);
+	var vHoraDelDia = parseInt(document.getElementById("txtIdHora").value);
 	
 	switch(vHoraDelDia){
 
@@ -17,4 +17,5 @@ function mostrar()
 				
 	}
 
-}//FIN DE LA FUNCIÓN
+}
+//FIN DE LA FUNCIÓN

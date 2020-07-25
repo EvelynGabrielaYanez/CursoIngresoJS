@@ -1,10 +1,10 @@
 function mostrar()
 {
 	//tomo la hora
-	var vHoraDelDia = parseint(document.getElementById("txtIdHora").value);
+	var vHoraDelDia = parseInt(document.getElementById("txtIdHora").value);
 	// Se puede hacer así pero no tiene sentido escribir tantos casos
 
-	/*
+	
 	switch(vHoraDelDia){
 
 		case 7:
@@ -50,21 +50,23 @@ function mostrar()
 
 		break;
 	}
-		*/
 
+}//FIN DE LA FUNCIÓN
+		
+/*
 		switch(true){
 
-			case ( vHoraDelDia >=7 && vHora<=11):
+			case ( vHoraDelDia >=7 && vHoraDelDia<=11):
 	
 				alert("Es de mañana");
 	
 			break;
-			case ( vHoraDelDia >=12 && vHora<=19):
+			case ( vHoraDelDia >=12 && vHoraDelDia<=19):
 	
 				alert("Es de tarde");
 	
 			break;
-			case (( vHoraDelDia >=20 && vHora<=24) || (vHoraDelDia >=0 && vHora<=6)):
+			case (( vHoraDelDia >=20 && vHoraDelDia<=24) || (vHoraDelDia >=0 && vHoraDelDia<=6)):
 
 				alert("Es de noche");
 	
@@ -76,7 +78,6 @@ function mostrar()
 			break;
 
 		}
-
+*/
 		// Modo corto
 
-}//FIN DE LA FUNCIÓN
