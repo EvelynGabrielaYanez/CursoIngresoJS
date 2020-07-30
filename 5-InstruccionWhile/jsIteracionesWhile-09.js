@@ -3,19 +3,44 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
 {	// declarar variables
-	var banderaDelPrimero;
-	var numeroIngresado;
-	var numeroMaximo;
-	var numeroMinimo;
-	var respuesta;
+	let vBanderaDelPrimero;
+	let vNumeroIngresado;
+	let vNumeroMaximo;
+	let vNumeroMinimo;
+	let vRespuesta;
 	//iniciar variables
-	banderaDelPrimero="es el primero";
-	respuesta='si';
-	while(respuesta=="si")
+	vBanderaDelPrimero="es el primero";
+	vRespuesta='si';
+
+	while(vRespuesta == "si")
 	{
 		
-		respuesta=prompt("desea continuar?");
+		vNumeroIngresado = prompt("Ingrese un número");		//Pido el ingreso del número.
+		vNumeroIngresado = parseFloat(vNumeroIngresado);
+		
+		if(vBanderaDelPrimero == "es el primero"){		//Si es el primer número ingresado.
+
+			//Como es el primero obligatoriamente es el máximo y el mínimo de los ingresados.
+			vNumeroMaximo = vNumeroIngresado;
+			vNumeroMinimo = vNumeroIngresado; 
+
+			vBanderaDelPrimero = "";		//Bajo la bandera del primer número ingresado.
+
+		}else{		//Si NO es el primer número ingresado.
+
+			//Calculo en máximo y mínimo entre el nuevo número y el max o min anterior.
+			vNumeroMaximo = Math.max(vNumeroIngresado,vNumeroMaximo);
+			vNumeroMinimo = Math.min(vNumeroIngresado,vNumeroMinimo); 			
+
+		}
+
+		vRespuesta=prompt("¿Desea continuar?(si/no)");		//Pregunto si quiere ingresar otro número.
+
 	}
-	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
+
+	document.getElementById("txtIdMaximo").value=vNumeroMaximo;			//Devuelvo máximo por pantalla.
+
+	document.getElementById("txtIdMinimo").value=vNumeroMinimo;		//Devuelvo mínimo por pantalla.
+
+
 }//FIN DE LA FUNCIÓN

@@ -50,8 +50,9 @@ switch(vEstacion){
 		}
 
 	break;
-	default:
-
+	case "Otoño":
+	case "Primavera":
+		
 		switch(vDestino){
 			case "Cordoba":
 
@@ -69,75 +70,6 @@ switch(vEstacion){
 
 }
 
-alert("Precio final a pagar: " + vPrecioFinal);
+	alert("Precio final a pagar: " + vPrecioFinal);
 
-
-
-
-
-
-
-
-
-	/*
-	switch(true){	
-		case (vEstacion == "Invierno" && vDestino == "Bariloche" ):
-			vPrecioFinal = cEstadia * (1 + 20/100);
-		break;
-		case (vEstacion == "Invierno" && (vDestino == "Cordoba" ||  vDestino == "Cataratas"  )):
-			vPrecioFinal = cEstadia * (1 - 10/100);
-		break;
-		case (vEstacion == "Invierno" && vDestino == "Mar del plata" ):
-			vPrecioFinal = cEstadia * (1 - 20/100);
-		break;	
-
-
-		case (vEstacion == "Verano" && vDestino == "Bariloche" ):
-			vPrecioFinal = cEstadia * (1 - 20/100);
-		break;
-		case (vEstacion == "Verano" && (vDestino == "Cordoba" ||  vDestino == "Cataratas"  )):
-			vPrecioFinal = cEstadia * (1 + 10/100);
-		break;
-		case (vEstacion == "Verano" && vDestino == "Mar del plata" ):
-			vPrecioFinal = cEstadia * (1 + 20/100);
-		break;			
-
-
-		case ((vEstacion == "Otoño" || vEstacion == "Primavera" )  && vDestino == "Cordoba" ):
-			vPrecioFinal = cEstadia;
-		break;		
-		default:
-			vPrecioFinal = cEstadia * (1 + 10/100);
-		break;
-	}
-*/
-
-	/// otra forma  es mas corta pero menos clara a la vista
-
-/*
-	switch(true){	
-		case (vEstacion == "Invierno" && vDestino == "Bariloche" ):
-		case (vEstacion == "Verano" && vDestino == "Mar del plata" ):
-			vPrecioFinal = cEstadia * (1 + 20/100);
-		break;
-		case (vEstacion == "Invierno" && (vDestino == "Cordoba" ||  vDestino == "Cataratas"  )):
-			vPrecioFinal = cEstadia * (1 - 10/100);
-		break;
-		case (vEstacion == "Invierno" && vDestino == "Mar del plata" ):
-		case (vEstacion == "Verano" && vDestino == "Bariloche" ):
-			vPrecioFinal = cEstadia * (1 - 20/100);
-		break;	
-		case ((vEstacion == "Otoño" || vEstacion == "Primavera" )  && vDestino == "Cordoba" ):
-			vPrecioFinal = cEstadia;
-		break;		
-		default:
-			vPrecioFinal = cEstadia * (1 + 10/100);
-		break;
-	}
-
-	*/
-
-	
-
-}
-//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN
