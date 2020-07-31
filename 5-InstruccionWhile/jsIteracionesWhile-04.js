@@ -6,7 +6,7 @@ function mostrar()
 	let vNumeroIngresado;
 	vNumeroIngresado = prompt("ingrese un número entre 0 y 9.");
 	vNumeroIngresado = parseInt(vNumeroIngresado);
-	while(vNumeroIngresado>9)
+	while(vNumeroIngresado>9 || vNumeroIngresado<0 )
 	{
 
 		alert("Igresaste un número incorrecto.");
