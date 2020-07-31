@@ -1,9 +1,9 @@
-var miIntervalo ;
+var vMiIntervalo ;
 
 function inicio()
 {	
 	alert("function inicio.");
-	miIntervalo = setInterval(SegundosEnElAire, 3000);
+	vMiIntervalo = setInterval(SegundosEnElAire, 3000);
 	
 }//FIN DE LA FUNCIÓN inicio
 

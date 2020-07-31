@@ -1,23 +1,30 @@
 function mostrar()
 {
 
-	var miArray = new Array();
+	let vVector = new Array;
+	let vCantElementos;
+	let vCadenaMostrar = "V = (";
 
-	for (var i = 0; i <5; i++)
-	{
-		miArray[i]=parseInt(prompt("Ingrese un numero"));
+	vCantElementos = parseInt(prompt("¿Cúantos elementos desea que tenga su vector?"));
+
+
+	for(let i = 1; i <= vCantElementos ; i++ ){
+
+		vVector[i] = parseInt(prompt("Ingrese el elemento " + i + " del vector."));
+
+		if(i < vCantElementos){
+
+			vCadenaMostrar += vVector[i] + ";"; 
+
+		}else{
+
+			vCadenaMostrar  += vVector[i] + ")"; 
+
+		}
+
 	}
 
-
-
-	for(var i=0; i<5; i++)
-	{
-
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
-	}
-
-
-
+	document.write(vCadenaMostrar);
 
 
 }//FIN DE LA FUNCIÓN

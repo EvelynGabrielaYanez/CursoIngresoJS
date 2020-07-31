@@ -1,28 +1,31 @@
 function mostrar()
 {
+	let vVector = new Array;
+	let vCadenaMostrar = "Llamamos <strong>V</strong> al vector que creaste.<br/>V = (";
+	let vCantElementos = 0;
+	let vSumaElementos = 0;
 
-	var miArray = new Array();
-	var acum=0;
-	for (var i = 0; i <5; i++)
-	{
-		miArray[i]=parseInt(prompt("Ingrese un numero"));
-		acum+=miArray[i];
+	vCantElementos = parseInt(prompt("¿Cúantos elementos desea que tenga su vector?"));
+
+
+	for(let i = 1; i <= vCantElementos ; i++ ){
+
+		vVector[i] = parseInt(prompt("Ingrese el elemento " + i + " del vector."));
+
+		vSumaElementos += vVector[i];
+
+		if(i < vCantElementos){
+
+			vCadenaMostrar += vVector[i] + ";"; 
+
+		}else{
+
+			vCadenaMostrar  += vVector[i] + ")"; 
+
+		}
 
 	}
 
-
-
-	for(var i=0; i<5; i++)
-	{
-
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
-
-
-	}
-
-	document.write("<h1> La suma de todos los numeros es: "+acum+"</h1>")
-
-
-
+document.write(vCadenaMostrar + "<br/>La <strong>suma</strong> de todos los elementos de tu vector es: <strong>" + vSumaElementos + "</strong>");
 
 }//FIN DE LA FUNCIÓN

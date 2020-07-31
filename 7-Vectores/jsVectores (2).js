@@ -1,25 +1,21 @@
 function mostrar()
 {
+	let vVector = new Array();
+	let vContenidoVector = "";
 
-	var miArray = new Array();
+	vVector[0]="Juan";
+	vVector[1]="Luis";
+	vVector[2]="Maria";
+	vVector[3]="Nahuel";
+	vVector[4]="Yolanda";
 
-	miArray[0]="Juan";
-	miArray[1]="Luis";
-	miArray[2]="Maria";
-	miArray[3]="Nahuel";
-	miArray[4]="Yolanda";
+	for(let i=0; i<5; i++){
 
-
-document.write("El contenido del vector es: <br>");
-
-	for(var i=0; i<5; i++)
-	{
-
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
+		vContenidoVector  = vContenidoVector +  "\nPosición " + i + "-->" +  vVector[i] ;
+		
 	}
 
-
-
+alert("El contenido del vector es:" + vContenidoVector);
 
 
 }//FIN DE LA FUNCIÓN
