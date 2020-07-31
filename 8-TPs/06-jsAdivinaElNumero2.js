@@ -34,52 +34,61 @@ function verificar()
 	  vCantIntentos = vCantIntentos  + 1;
 	 
 	  document.getElementById("txtIdIntentos").value = vCantIntentos ;
-	
+
+
 	  if( vNumIngresado == vNumSecreto){
 	
 		switch(vCantIntentos){
 			case 1:
 			
-				alert("usted es un Psíquico");
+				alert("Usted es un Psíquico. \n Ganó en " + vCantIntentos + " inteto.");
 
 			break;
 			case 2:
 
-				alert("excelente percepción");
+				alert("Excelente percepción \n Ganó en " + vCantIntentos + " intetos.");
 
 			break;
 			case 3:
 
-				alert("Esto es suerte");
+				alert("Esto es suerte \n Ganó en " + vCantIntentos + " intetos.");
 
 			break;
 			case 4:
 
-				alert("Excelente técnica");
+				alert("Excelente técnica \n Ganó en " + vCantIntentos + " intetos.");
 
 			break;
 
 			case 5:
 
-				alert("usted está en la media");
+				alert("Usted está en la media \n Ganó en " + vCantIntentos + " intetos.");
 
 			break;
 			default:
 				if(vCantIntentos<=10){
 
-					alert("falta técnica");
+					alert("Falta técnica \n Ganó en " + vCantIntentos + " intetos.");
 
 				}
 				else{
 
-					alert("afortunado en el amor!!");
+					alert("Afortunado en el amor!! \n Ganó en " + vCantIntentos + " intetos.");
 
 				}
 			break;
 
 		}
 
-	  }
+	}else if( vNumIngresado < vNumSecreto){
+
+	    alert("falta…");
+
+  	}else{
+
+	    alert("se pasó…");
+
+  	}
 	
 	
 
