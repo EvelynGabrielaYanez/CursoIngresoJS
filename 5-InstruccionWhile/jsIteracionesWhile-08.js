@@ -9,6 +9,47 @@ function mostrar()
 	let vNumeroIngresado;
 	vSumaPositivos=0;
 	vMultiplicacionNegativos=1;
+
+	do{
+
+
+		vNumeroIngresado = prompt("Ingrese un número");
+		vNumeroIngresado = parseFloat(vNumeroIngresado);
+
+		if(vNumeroIngresado >=0 ){
+
+			vSumaPositivos += vNumeroIngresado;
+
+		}
+		else{
+
+			vMultiplicacionNegativos *= vNumeroIngresado;
+
+		}
+
+		vRespuesta =  prompt("¿Desea ingresar otro número? (si/no)");
+		
+		
+	}while(vRespuesta == "si")
+
+	document.getElementById("txtIdSuma").value = vSumaPositivos;
+
+	document.getElementById("txtIdProducto").value = vMultiplicacionNegativos;
+
+}
+//FIN DE LA FUNCIÓN
+
+
+/*
+
+function mostrar()
+{
+	let vRespuesta;
+	let vSumaPositivos;
+	let vMultiplicacionNegativos;
+	let vNumeroIngresado;
+	vSumaPositivos=0;
+	vMultiplicacionNegativos=1;
 	vRespuesta= "si";
 
 	while(vRespuesta == "si"){
@@ -38,4 +79,4 @@ function mostrar()
 	document.getElementById("txtIdProducto").value = vMultiplicacionNegativos;
 
 }
-//FIN DE LA FUNCIÓN
+*/
