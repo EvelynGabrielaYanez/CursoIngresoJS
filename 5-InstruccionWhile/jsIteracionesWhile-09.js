@@ -9,20 +9,20 @@ function mostrar()
 	let vNumeroMinimo;
 	let vRespuesta;
 	//iniciar variables
-	vBanderaDelPrimero="es el primero";
+	vBanderaDelPrimero=false;
 
 	do{
 		
 		vNumeroIngresado = prompt("Ingrese un número");		//Pido el ingreso del número.
 		vNumeroIngresado = parseFloat(vNumeroIngresado);
 		
-		if(vBanderaDelPrimero == "es el primero"){		//Si es el primer número ingresado.
+		if(vBanderaDelPrimero == false ){		//Si es el primer número ingresado.
 
 			//Como es el primero obligatoriamente es el máximo y el mínimo de los ingresados.
 			vNumeroMaximo = vNumeroIngresado;
 			vNumeroMinimo = vNumeroIngresado; 
 
-			vBanderaDelPrimero = "";		//Bajo la bandera del primer número ingresado.
+			vBanderaDelPrimero = true;		//Bajo la bandera del primer número ingresado.
 
 		}else{		//Si NO es el primer número ingresado.
 

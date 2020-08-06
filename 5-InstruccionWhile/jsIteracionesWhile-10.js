@@ -97,7 +97,7 @@ function mostrar()
 		vPromedioPosit = vSumaPositivos/vCantPositivos;
 	}
 
-	
+	/*
 	alert("1-Suma de los negativos = " +  vSumaNegativos + 
 	"\n2-Suma de los positivo = " + vSumaPositivos  + 
 	"\n3-Cantidad de positivos = " + vCantPositivos + 
@@ -107,8 +107,19 @@ function mostrar()
 	"\n7-Promedio de positivos = " + vPromedioPosit + 
 	"\n8-Promedios de negativos = " + vPromedioNegat + 
 	"\n9-Diferencia entre suma de los positivos y negativos = " + (vSumaPositivos - vSumaNegativos) + 
-	"\n10-Diferencia entre cantidad positivos y negativos = " + (vCantPositivos - vCantNegativos)	+ 
-	"\n11-Diferencia entre promedio de positivos y negativos = " + (vPromedioPosit - vPromedioNegat));
+	"\n10-Diferencia entre cantidad positivos y negativos = " + (vCantPositivos + vCantNegativos)	+ 
+	"\n11-Diferencia entre promedio de positivos y negativos = " + (vPromedioPosit - vPromedioNegat));*/
+	document.write("1-Suma de los negativos = " +  vSumaNegativos + 
+	"</br>2-Suma de los positivo = " + vSumaPositivos  + 
+	"</br>3-Cantidad de positivos = " + vCantPositivos + 
+	"</br>4-Cantidad de negativos " + vCantNegativos + 
+	"</br>5-Cantidad de ceros = " + vCantCeros + 
+	"</br>6-Cantidad de números pares = " + vCantPares + 
+	"</br>7-Promedio de positivos = " + vPromedioPosit + 
+	"</br>8-Promedios de negativos = " + vPromedioNegat + 
+	"</br>9-Diferencia entre suma de los positivos y negativos = " + (vSumaPositivos + vSumaNegativos) + 
+	"</br>10-Diferencia entre cantidad positivos y negativos = " + (vCantPositivos - vCantNegativos)	+ 
+	"</br>11-Diferencia entre promedio de positivos y negativos = " + (vPromedioPosit - vPromedioNegat));
 
 }
 
